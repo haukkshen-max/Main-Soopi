@@ -1,0 +1,26 @@
+{
+  "name": "soopi-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nền tảng API cho dự án Soopi",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed:admin": "node scripts/taoQuanTriVien.js",
+    "seed:demo-accounts": "node scripts/taoTaiKhoanMau.js",
+    "seed:demo": "node scripts/taoDuLieuMau.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.11.0",
+    "cookie": "^2.0.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.11.2",
+    "multer": "^2.4.0",
+    "socket.io": "^4.8.4"
+  }
+}
